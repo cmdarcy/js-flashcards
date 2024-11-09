@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Card from "../Components/Card";
 
 function DeckPage() {
 	const location = useLocation();
@@ -10,11 +11,11 @@ function DeckPage() {
 			<h3> {deckData.deckTitle}</h3>
 			{deckData.cards.map((card) => {
 				return (
-					<>
-						<h4>{card.front}</h4>
-						<p>{card.back.description}</p>
-						<p>Returns: {card.back.returns}</p>
-					</>
+					<Card
+						title={card.front}
+						description={card.back.description}
+						returns={card.back.returns}
+					/>
 				);
 			})}
 		</>
