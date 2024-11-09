@@ -5,9 +5,15 @@ function Nav() {
 	return (
 		<nav>
 			<ul>
-				<NavLink to="/">Home</NavLink>
-				<NavLink to="/decks">Decks</NavLink>
-				<NavLink to="quiz">Quiz</NavLink>
+				<li>
+					<NavLink to="/">Home</NavLink>
+				</li>
+				<li>
+					<NavLink to="/decks">Decks</NavLink>
+				</li>
+				<li>
+					<NavLink to="quiz">Quiz</NavLink>
+				</li>
 			</ul>
 		</nav>
 	);

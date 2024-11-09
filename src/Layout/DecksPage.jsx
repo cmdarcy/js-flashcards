@@ -8,9 +8,11 @@ function DecksPage() {
 			<ul>
 				{data.map((deck) => {
 					return (
-						<Link to={`/decks/${deck.deckTitle}`} state={{ deckData: deck }}>
-							{deck.deckTitle}
-						</Link>
+						<li>
+							<Link to={`/decks/${deck.deckTitle}`} state={{ deckData: deck }}>
+								{deck.deckTitle}
+							</Link>
+						</li>
 					);
 				})}
 			</ul>
