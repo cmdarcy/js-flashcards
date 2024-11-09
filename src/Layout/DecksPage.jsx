@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../cardsData";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 function DecksPage() {
 	return (
 		<>
@@ -8,7 +8,9 @@ function DecksPage() {
 			<ul>
 				{data.map((deck) => {
 					return (
-						<NavLink to={`/decks/${deck.deckTitle}`}>{deck.deckTitle}</NavLink>
+						<Link to={`/decks/${deck.deckTitle}`} state={{ deckData: deck }}>
+							{deck.deckTitle}
+						</Link>
 					);
 				})}
 			</ul>
