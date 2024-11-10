@@ -14,7 +14,7 @@ function DeckPage() {
 					<Card
 						title={card.front}
 						description={card.back.description}
-						returns={card.back.returns}
+						extra_info={card.back.extra_info}
 					/>
 				);
 			})}
