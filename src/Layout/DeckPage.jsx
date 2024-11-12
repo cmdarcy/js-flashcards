@@ -9,15 +9,18 @@ function DeckPage() {
 	return (
 		<>
 			<h3> {deckData.deckTitle}</h3>
-			{deckData.cards.map((card) => {
-				return (
-					<Card
-						title={card.front}
-						description={card.back.description}
-						extra_info={card.back.extra_info}
-					/>
-				);
-			})}
+
+			<div className="flex gap-2">
+				{deckData.cards.map((card) => {
+					return (
+						<Card
+							title={card.front}
+							description={card.back.description}
+							extra_info={card.back.extra_info}
+						/>
+					);
+				})}
+			</div>
 		</>
 	);
 }
