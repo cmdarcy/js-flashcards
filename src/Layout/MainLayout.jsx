@@ -4,11 +4,13 @@ import Footer from "../Components/Footer";
 import { Outlet } from "react-router-dom";
 function MainLayout() {
 	return (
-		<>
+		<div className="flex flex-col items-center min-h-full">
 			<Header></Header>
-			<Outlet />
+			<main className="flex flex-col items-center">
+				<Outlet />
+			</main>
 			<Footer></Footer>
-		</>
+		</div>
 	);
 }
 

@@ -10,7 +10,7 @@ function DeckPage() {
 		<>
 			<h3> {deckData.deckTitle}</h3>
 
-			<div className="flex gap-2">
+			<div className="flex gap-2 flex-wrap justify-center">
 				{deckData.cards.map((card) => {
 					return (
 						<Card

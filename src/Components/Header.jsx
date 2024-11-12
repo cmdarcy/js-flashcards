@@ -4,7 +4,7 @@ import Nav from "./Nav";
 function Header() {
 	return (
 		<header>
-			<h1>JS Flashcards</h1>
+			<h1 className="text-2xl">JS Flashcards</h1>
 			<Nav />
 		</header>
 	);
