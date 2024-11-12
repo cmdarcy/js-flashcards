@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import Card from "../Components/Card";
+import Card from "../Components/Card/Card.jsx";
 
 function DeckPage() {
 	const location = useLocation();
