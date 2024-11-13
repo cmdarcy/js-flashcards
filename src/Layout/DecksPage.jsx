@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 function DecksPage() {
 	return (
 		<>
-			<h2>Decks</h2>
+			<h2 className="text-lg text-white">Decks</h2>
 			<ul>
 				{data.map((deck) => {
 					return (
 						<li>
-							<Link to={`/decks/${deck.deckTitle}`} state={{ deckData: deck }}>
+							<Link
+								className="text-celadon hover:text-blush"
+								to={`/decks/${deck.deckTitle}`}
+								state={{ deckData: deck }}
+							>
 								{deck.deckTitle}
 							</Link>
 						</li>
