@@ -9,7 +9,12 @@ function DeckPage() {
 	return (
 		<>
 			<h3 className="text-white text-2xl mb-2"> {deckData.deckTitle}</h3>
-
+			{deckData.cards.length === 0 && (
+				<p className="text-white">
+					This deck is currently empty. Add your own cards to this deck by
+					visiting the github repo!
+				</p>
+			)}
 			<div className="flex gap-2 flex-wrap justify-center">
 				{deckData.cards.map((card) => {
 					return (
