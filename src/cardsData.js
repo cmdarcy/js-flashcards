@@ -1,3 +1,6 @@
+// New cards and decks can be added to this file by creating a pull request
+// Please see the readme for more information
+
 const data = [
 	{
 		deckTitle: "arrayMethods",
