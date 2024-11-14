@@ -12,11 +12,13 @@ import MainLayout from "./Layout/MainLayout.jsx";
 import DecksPage from "./Layout/DecksPage.jsx";
 import DeckPage from "./Layout/DeckPage.jsx";
 import QuizPage from "./Layout/QuizPage.jsx";
+import WelcomeInfo from "./Layout/WelcomeInfo.jsx";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<MainLayout />}>
-			<Route path="decks" element={<DecksPage />}></Route>
+			<Route index element={<WelcomeInfo />} />
+			<Route path="decks" element={<DecksPage />} />
 			<Route path="decks/:deckTitle" element={<DeckPage />} />
 			<Route path="quiz" element={<QuizPage />} />
 		</Route>
