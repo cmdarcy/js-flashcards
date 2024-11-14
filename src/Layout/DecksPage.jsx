@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function DecksPage() {
 	return (
 		<>
-			<h2 className="text-lg text-white">Decks</h2>
+			<h2 className="text-2xl text-white">Decks</h2>
 			<ul>
 				{data.map((deck) => {
 					return (

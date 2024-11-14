@@ -30,7 +30,7 @@ export default {
 			asparagus: "#73956fff",
 			cambridge_blue: "#7bae7fff",
 			celadon: "#95d7aeff",
-			blush: "#FCEFF9",
+			blush: { DEFAULT: "#FCEFF9", dark: "#F8DDF2" },
 			white: "white",
 		},
 		extend: {},

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
 	return (
-		<nav>
+		<nav className="flex justify-center">
 			<ul className="flex gap-2">
 				<li>
 					<NavLink

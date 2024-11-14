@@ -8,7 +8,7 @@ function DeckPage() {
 
 	return (
 		<>
-			<h3 className="text-white"> {deckData.deckTitle}</h3>
+			<h3 className="text-white text-2xl mb-2"> {deckData.deckTitle}</h3>
 
 			<div className="flex gap-2 flex-wrap justify-center">
 				{deckData.cards.map((card) => {
